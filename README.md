@@ -40,6 +40,4 @@ Here're some of the project's best features:
 
 <p>1. ⚙️ Installation &amp; Setup Follow these steps to run the project locally on your system 👇 1️⃣ Clone the Repository git clone https://github.com/your-username/bmi-calculator.git 2️⃣ Navigate to the Project Folder cd bmi-calculator 3️⃣ Install Dependencies npm install 4️⃣ Run the Development Server npm run dev Then open the link shown in the terminal — usually 👉 http://localhost:5173/</p>
 
-```
-import React { useState } from 'react';  const App = () => {   const [weight setWeight] = useState('');   const [height setHeight] = useState('');   const [bmi setBmi] = useState(null);    const calculateBMI = () => {     const w = parseFloat(weight);     const h = parseFloat(height);      if (w > 0 && h > 0) {       const bmiValue = w / (h * h);       const roundedBmi = bmiValue.toFixed(2);       setBmi(roundedBmi);       alert(`Your BMI is ${roundedBmi}`);     } else {       alert('⚠️ Please enter valid positive numbers for both weight and height!');     }   };    return (            BMI CALCULATOR                            Weight (kg)            setWeight(e.target.value)}           />                              Height (m)            setHeight(e.target.value)}           />                              Calculate BMI                   {bmi && (           Your BMI: {bmi}         )}               ); };  export default App;
-```
+
