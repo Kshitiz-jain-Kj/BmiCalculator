@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix ./bmicalculator run dev",
+    "build": "npm --prefix ./bmicalculator run build",
+    "preview": "npm --prefix ./bmicalculator run preview",
+    "lint": "npm --prefix ./bmicalculator run lint"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.17",
+    "tailwindcss": "^4.1.17"
+  }
+}
